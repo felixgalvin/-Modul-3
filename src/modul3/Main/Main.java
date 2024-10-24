@@ -7,7 +7,7 @@ import java.time.LocalTime;
 import modul3.Model.classes.*;
 import modul3.Model.enums.Status;
 
-public class Dummy {
+public class Main {
     public static void main(String[] args) {
 
         //=========================================================== DUMMY MAHASISWA ===========================================================
@@ -36,7 +36,7 @@ public class Dummy {
         matkulAmbilSarjana.add(new MatkulAmbil(mataKuliah, presensiList, 80, 88, 78));
         matkulAmbilSarjana.add(new MatkulAmbil(mataKuliah2, presensiList, 88, 81, 98));
         matkulAmbilSarjana.add(new MatkulAmbil(mataKuliah3, presensiList2, 90, 58, 78));
-
+        
         // Data Dummy class SARJANA
         ArrayList<Sarjana> sarjana = new ArrayList<>();
         sarjana.add(new Sarjana("Felix", "TKI", "Bandung, 20 September 2004", "09474657676", 1123042, "Informatika", matkulAmbilSarjana));
@@ -117,7 +117,35 @@ public class Dummy {
         dosenHonorer.add(new DosenHonorer("Bird", "Rahayu", "Bandung, 12 September 2004", "082748457534", 33245773, "Sistem Informasi", MatkulAjars2, 250000));
         dosenHonorer.add(new DosenHonorer("Awesmy", "TKI", "Bandung, 16 September 2004", "082359337534", 333535473, "MIT", MatkulAjars3, 250000));
 
-        
-        System.out.println(dosenHonorer.get(0).toString());
+        //=========================================================== SOUT DATA ===========================================================
+        for (Sarjana sarjanas : sarjana) {
+            System.out.println(sarjanas);
+            System.out.println();
+        }
+
+        for (Magister magisters : magister) {
+            System.out.println(magisters);
+            System.out.println();
+        }
+
+        for (Doktor doktors : doktor) {
+            System.out.println(doktors);
+            System.out.println();
+        }
+
+        for (Karyawan karyawans : karyawan) {
+            System.out.println(karyawans);
+            System.out.println();
+        }
+
+        for (DosenTetap dosenTetaps : dosenTetap) {
+            System.out.println(dosenTetaps);
+            System.out.println();
+        }
+
+        for (DosenHonorer dosenHonorers : dosenHonorer) {
+            System.out.println(dosenHonorers);
+            System.out.println();
+        }
     }
 }

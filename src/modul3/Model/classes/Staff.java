@@ -18,6 +18,6 @@ abstract class Staff extends User{
 
     @Override
     public String toString() {
-        return super.toString() + "NIK: " + getNIK();
+        return super.toString() + ", NIK: " + getNIK();
     }
 }

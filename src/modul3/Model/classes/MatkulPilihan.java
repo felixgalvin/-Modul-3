@@ -15,4 +15,8 @@ public class MatkulPilihan extends MataKuliah {
     public void setJumlahMinimum(int jumlahMinimum) {
         this.jumlahMinimum = jumlahMinimum;
     }
+
+    public String toString() {
+        return super.toString() + ", Jumlah minimum: " + getJumlahMinimum();
+    }
 }

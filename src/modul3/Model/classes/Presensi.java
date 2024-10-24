@@ -2,7 +2,9 @@ package modul3.Model.classes;
 
 import java.sql.Date;
 
-public class Presensi {
+import modul3.Model.interfaces.Action;
+
+public class Presensi implements Action{
     private Date tanggal;
     private int status;
 
@@ -25,5 +27,9 @@ public class Presensi {
     
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public String toString() {
+        return "Tanggal : " + getTanggal() + ", Status: " + getStatus();
     }
 }

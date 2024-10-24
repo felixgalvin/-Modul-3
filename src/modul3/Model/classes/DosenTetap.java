@@ -20,6 +20,6 @@ public class DosenTetap extends Dosen{
 
     @Override
     public String toString() {
-        return super.toString() + "Salary: " + getSalary();
+        return super.toString() + ", Salary: " + getSalary();
     }
 }

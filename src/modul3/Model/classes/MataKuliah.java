@@ -1,6 +1,8 @@
 package modul3.Model.classes;
 
-public class MataKuliah {
+import modul3.Model.interfaces.Action;
+
+public class MataKuliah implements Action{
     private String kode;
     private int SKS;
     private String nama;
@@ -33,5 +35,9 @@ public class MataKuliah {
 
     public void setNama(String nama) {
         this.nama = nama;
+    }
+
+    public String toString() {
+        return "Kode: " + getKode() + ", SKS: " + getSKS() + ", Nama: " + getNama();
     }
 }

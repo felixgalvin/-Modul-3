@@ -30,6 +30,6 @@ public class Magister extends Mahasiswa{
 
     @Override
     public String toString() {
-        return super.toString() + "List Matakuliah: " + getMataKuliah() + "Judul Tesis: " + getJudulTesis();
+        return super.toString() + ", List Matakuliah: " + getMataKuliah() + ", Judul Tesis: " + getJudulTesis();
     }
 }

@@ -20,6 +20,6 @@ public class DosenHonorer extends Dosen{
 
     @Override
     public String toString() {
-        return super.toString() + "Gaji per SKS: " + getHonorPerSKS();
+        return super.toString() + ", Gaji per SKS: " + getHonorPerSKS();
     }
 }

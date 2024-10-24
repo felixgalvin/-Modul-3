@@ -2,7 +2,9 @@ package modul3.Model.classes;
 
 import java.util.ArrayList;
 
-public class MatkulAjar {
+import modul3.Model.interfaces.Action;
+
+public class MatkulAjar implements Action{
     private MataKuliah mataKuliah;
     private ArrayList<PresensiStaff> presensiStaff = new ArrayList<>();
 
@@ -25,5 +27,9 @@ public class MatkulAjar {
     
     public void setPresensiStaff(ArrayList<PresensiStaff> presensiStaff) {
         this.presensiStaff = presensiStaff;
+    }
+
+    public String toString() {
+        return "Matakuliah: " + getMataKuliah() + ", Presensi Staff: " + getPresensiStaff();
     }
 }

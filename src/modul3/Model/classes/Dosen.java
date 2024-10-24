@@ -30,6 +30,6 @@ abstract class Dosen extends Staff{
 
     @Override
     public String toString() {
-        return super.toString() + "Dapartemen: " + getDapartemen() + ", List Matakuliah: " + getListMatkul();
+        return super.toString() + ", Dapartemen: " + getDapartemen() + ", List Matakuliah: " + getListMatkul();
     }
 }

@@ -48,6 +48,6 @@ public class Doktor extends Mahasiswa{
 
     @Override
     public String toString() {
-        return super.toString() + "Judul Tesis: " + getJudulTesis() + ", Nilai 1: " + getNilaiS1() + ", Nilai 2: " + getNilaiS2() + ", Nilai 3: " + getNilaiS3();
+        return super.toString() + ", Judul Tesis: " + getJudulTesis() + ", Nilai 1: " + getNilaiS1() + ", Nilai 2: " + getNilaiS2() + ", Nilai 3: " + getNilaiS3();
     }
 }

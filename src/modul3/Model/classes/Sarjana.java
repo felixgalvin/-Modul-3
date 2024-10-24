@@ -20,6 +20,6 @@ public class Sarjana extends Mahasiswa{
     
     @Override
     public String toString() {
-        return super.toString() + "List Matakuliah: " + getMataKuliah();
+        return super.toString() + ", List Matakuliah: " + getMataKuliah();
     }
 }

@@ -1,7 +1,7 @@
 package modul3.Model.classes;
 import modul3.Model.interfaces.Action;;
 
-abstract class User implements Action{
+public abstract class User implements Action{
     private String nama;
     private String alamat;
     private String TTL;

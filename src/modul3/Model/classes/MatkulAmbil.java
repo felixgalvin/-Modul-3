@@ -2,7 +2,9 @@ package modul3.Model.classes;
 
 import java.util.ArrayList;
 
-public class MatkulAmbil {
+import modul3.Model.interfaces.Action;
+
+public class MatkulAmbil implements Action{
     private MataKuliah mataKuliah;
     private ArrayList<Presensi> presensi = new ArrayList<>();
     private int n1;
@@ -57,5 +59,7 @@ public class MatkulAmbil {
         this.n3 = n3;
     }
 
-
+    public String toString() {
+        return "Matakuliah: " + getMataKuliah() + ", Presensi: " + getPresensi() + ", N1: " + getN1() + ", N2: " + getN2() + ", N3: " + getN3();
+    }
 }
